@@ -1,0 +1,31 @@
+-- CREATE TABLE cliente(
+-- nome varchar(200),
+-- CPF_cliente_PK varchar(11) primary key, 
+-- telefone int,
+-- endereco varchar(300)
+-- );
+
+-- CREATE TABLE pedidos(
+-- n°_pedido_PK serial primary key,
+-- CPF_cliente_FK varchar(11),
+-- data_pedido date,
+-- data_entrega date,
+-- foreign key(CPF_cliente_FK) references cliente(CPF_cliente_PK)
+-- );
+
+-- CREATE TABLE produtos(
+-- tipo varchar(15), 
+-- nome_doce varchar(20), 
+-- preço_venda float,
+-- preço_custo float,
+-- id_produto_PK serial primary key
+-- );
+
+-- CREATE TABLE ItensPedido(
+-- n°_pedido_FK int,
+-- id_produto_FK int,
+-- quantidade int,
+-- id_item_PK serial primary key,
+-- foreign key(n°_pedido_FK) references pedidos(n°_pedido_PK),
+-- foreign key(id_produto_FK) references produtos(id_produto_PK)
+-- );
